@@ -19,8 +19,9 @@ Todos los datos de ejemplo (reglas `PAY-001..005`, categorías, estados `ALLOW/B
 | 9 | Configuración — Reglas de pago | ✅ [`pantallas/09-configuracion-reglas-de-pago.png`](../pantallas/09-configuracion-reglas-de-pago.png) | [§ Configuración · Reglas de pago](#9a-configuración--reglas-de-pago) |
 | 9b | Configuración — Parámetros | ❌ pendiente | [§ Configuración · Parámetros](#9b-configuración--parámetros) |
 | 9c | Configuración — Categorías | ❌ pendiente | [§ Configuración · Categorías](#9c-configuración--categorías) |
+| — | Logo (versión 3D) | ❌ pendiente (referencia subida) | [§ Logo — versión 3D](#10-logo--versión-3d) |
 
-También existe [`pantallas/referencia-set-9-pantallas.png`](../pantallas/referencia-set-9-pantallas.png): el mockup original de las 9 pantallas que sirvió de punto de partida para todos los prompts de abajo.
+También existe [`pantallas/referencia-set-9-pantallas.png`](../pantallas/referencia-set-9-pantallas.png): el mockup original de las 9 pantallas que sirvió de punto de partida para todos los prompts de abajo. Y [`logo/referencia-logo-3d.png`](../logo/referencia-logo-3d.png): la referencia visual (estilo 3D glossy) para el prompt del logo.
 
 **Descartado a propósito:** una pestaña "Integraciones" en Configuración (mostraría detalles de infraestructura — proyecto de Supabase, estado del modelo de Nebius — que no le corresponde ver a un administrador de negocio desde la app; es información operativa, no una regla de negocio).
 
@@ -572,3 +573,35 @@ Composition: sharp UI elements, legible mock Spanish-language labels,
 consistent 8px spacing grid, professional product-design portfolio
 quality.
 ```
+
+## 10. Logo — versión 3D
+
+Referencia visual: [`logo/referencia-logo-3d.png`](../logo/referencia-logo-3d.png) (estilo 3D glossy, gradiente azul-verde, fondo claro de estudio). Adaptado a la paleta de FlowGuard: `#2F6FED` (acento) → `#22C55E` (el mismo verde semántico de `ALLOW`).
+
+```
+3D glossy rendered logo icon for "FlowGuard", a fintech payment-approval
+security platform. Abstract shield silhouette made of curved, flowing
+ribbon-like ridges — like fingerprint lines or sound waves — that
+gradually morph into a stylized eye shape with a checkmark at the
+bottom tip, suggesting "detect, verify, protect".
+
+Material: smooth glossy 3D render, soft studio lighting, subtle
+specular highlights and soft ambient occlusion shadows along each
+ribbon edge, slight beveled/rounded thickness on every curve (not flat
+vector), floating slightly above a clean, seamless, very light
+neutral-gray studio background with a soft contact shadow beneath.
+
+Color: gradient flowing diagonally through the shield — electric blue
+#2F6FED at the top-left ribbons, transitioning smoothly through mid
+blues to brand green #22C55E at the bottom-right where the eye and
+checkmark sit, each ribbon colored by its position in the gradient
+(no flat single color on any single ribbon).
+
+Composition: centered, three-quarter front view, shield oriented
+upright, symmetric overall silhouette, generous negative space around
+it, square or landscape canvas, high-resolution product-render quality
+suitable for an app icon, favicon, or hero graphic — no text, no
+wordmark, no background pattern.
+```
+
+> Uso previsto: portada, landing, pitch deck — no el ícono plano chico que ya se usa adentro de la app (sidebar/favicon). Si se genera, considerar también una versión 2D simplificada con la misma forma para uso dentro de la UI.

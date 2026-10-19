@@ -9,7 +9,8 @@ Referencias visuales de FlowGuard: así es como se va a ver la app. Sirve para q
 | Carpeta | Contenido |
 |---|---|
 | [`pantallas/`](pantallas/) | Las imágenes generadas (mockups PNG) |
-| [`prompts/prompts-imagenes.md`](prompts/prompts-imagenes.md) | Los prompts de generación de imagen de cada pantalla, para regenerarlas o generar las que faltan |
+| [`logo/`](logo/) | Referencias e imágenes del logo |
+| [`prompts/prompts-imagenes.md`](prompts/prompts-imagenes.md) | Los prompts de generación de imagen de cada pantalla y del logo, para regenerarlas o generar las que faltan |
 
 ## Las 9 pantallas del producto
 
