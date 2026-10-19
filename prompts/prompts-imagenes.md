@@ -6,24 +6,70 @@ Todos los datos de ejemplo (reglas `PAY-001..005`, categorías, estados `ALLOW/B
 
 ## Estado
 
+**Las 9 pantallas + logo + paleta ya están generadas.** Todo el set visual está completo.
+
 | # | Pantalla | Imagen generada | Prompt |
 |---|---|---|---|
-| 1 | Login | ❌ pendiente | [§ Login](#1-login) |
-| 2 | Dashboard | ❌ pendiente | [§ Dashboard](#2-dashboard) |
-| 3 | Solicitudes de pago (lista) | ❌ pendiente | [§ Solicitudes de pago](#3-solicitudes-de-pago) |
-| 4 | Detalle de solicitud (bloqueada) | ❌ pendiente | [§ Detalle de solicitud](#4-detalle-de-solicitud) |
-| 5 | Simulador de aprobación | ❌ pendiente | [§ Simulador de aprobación](#5-simulador-de-aprobación) |
-| 6 | Centro de evidencias | ❌ pendiente | [§ Centro de evidencias](#6-centro-de-evidencias) |
-| 7 | Historial de ejecuciones | ❌ pendiente | [§ Historial de ejecuciones](#7-historial-de-ejecuciones) |
-| 8 | Gestión de usuarios | ❌ pendiente | [§ Gestión de usuarios](#8-gestión-de-usuarios) |
-| 9 | Configuración — Reglas de pago | ✅ [`pantallas/09-configuracion-reglas-de-pago.png`](../pantallas/09-configuracion-reglas-de-pago.png) | [§ Configuración · Reglas de pago](#9a-configuración--reglas-de-pago) |
-| 9b | Configuración — Parámetros | ❌ pendiente | [§ Configuración · Parámetros](#9b-configuración--parámetros) |
-| 9c | Configuración — Categorías | ❌ pendiente | [§ Configuración · Categorías](#9c-configuración--categorías) |
-| — | Logo (versión 3D) | ❌ pendiente (referencia subida) | [§ Logo — versión 3D](#10-logo--versión-3d) |
+| 1 | Login | ✅ [`pantallas/01-login.png`](../pantallas/01-login.png) | [§ Login](#1-login) |
+| 2 | Dashboard | ✅ [`pantallas/02-dashboard.png`](../pantallas/02-dashboard.png) | [§ Dashboard](#2-dashboard) |
+| 3 | Solicitudes de pago (lista) | ✅ [`pantallas/03-solicitudes-de-pago.png`](../pantallas/03-solicitudes-de-pago.png) | [§ Solicitudes de pago](#3-solicitudes-de-pago) |
+| 4 | Detalle de solicitud (bloqueada) | ✅ [`pantallas/04-detalle-solicitud.png`](../pantallas/04-detalle-solicitud.png) | [§ Detalle de solicitud](#4-detalle-de-solicitud) |
+| 5 | Simulador de aprobación | ✅ [`pantallas/05-simulador-aprobacion.png`](../pantallas/05-simulador-aprobacion.png) | [§ Simulador de aprobación](#5-simulador-de-aprobación) |
+| 6 | Centro de evidencias | ✅ [`pantallas/06-centro-evidencias.png`](../pantallas/06-centro-evidencias.png) | [§ Centro de evidencias](#6-centro-de-evidencias) |
+| 7 | Historial de ejecuciones | ✅ [`pantallas/07-historial-ejecuciones.png`](../pantallas/07-historial-ejecuciones.png) | [§ Historial de ejecuciones](#7-historial-de-ejecuciones) |
+| 8 | Gestión de usuarios | ✅ [`pantallas/08-gestion-usuarios.png`](../pantallas/08-gestion-usuarios.png) | [§ Gestión de usuarios](#8-gestión-de-usuarios) |
+| 9a | Configuración — Reglas de pago | ✅ [`pantallas/09a-configuracion-reglas-de-pago.png`](../pantallas/09a-configuracion-reglas-de-pago.png) | [§ Configuración · Reglas de pago](#9a-configuración--reglas-de-pago) |
+| 9b | Configuración — Parámetros | ⚠️ [`pantallas/09b-configuracion-parametros.png`](../pantallas/09b-configuracion-parametros.png) — ver nota abajo | [§ Configuración · Parámetros](#9b-configuración--parámetros) |
+| 9c | Configuración — Categorías | ✅ [`pantallas/09c-configuracion-categorias.png`](../pantallas/09c-configuracion-categorias.png) — typo del generador: dice "Regllas" en vez de "Reglas" | [§ Configuración · Categorías](#9c-configuración--categorías) |
+| — | Logo (final, fondo transparente) | ✅ [`logo/logo.png`](../logo/logo.png) | [§ Logo — versión 3D](#10-logo--versión-3d) |
+| — | Paleta de colores (benchmark) | ✅ [`paleta/benchmark-colores.png`](../paleta/benchmark-colores.png) | ver [el prompt de paleta de colores](#benchmark-de-paleta-de-colores) |
 
-También existe [`pantallas/referencia-set-9-pantallas.png`](../pantallas/referencia-set-9-pantallas.png): el mockup original de las 9 pantallas que sirvió de punto de partida para todos los prompts de abajo. Y [`logo/referencia-logo-3d.png`](../logo/referencia-logo-3d.png): la referencia visual (estilo 3D glossy) para el prompt del logo.
+También existe [`logo/referencia-logo-3d.png`](../logo/referencia-logo-3d.png): la referencia visual (estilo 3D glossy) que inspiró el prompt del logo.
 
 **Descartado a propósito:** una pestaña "Integraciones" en Configuración (mostraría detalles de infraestructura — proyecto de Supabase, estado del modelo de Nebius — que no le corresponde ver a un administrador de negocio desde la app; es información operativa, no una regla de negocio).
+
+**⚠️ Pendiente de regenerar — `09b-configuracion-parametros.png`:** esta imagen se generó con el prompt original (antes de descartar "Integraciones") y todavía muestra esa pestaña, además de una fila "Entorno de base de datos" (proyecto de Supabase) que también se descartó por el mismo motivo. El prompt de abajo ya está corregido (3 pestañas, sin esa fila) — falta volver a generar la imagen con el prompt actualizado.
+
+---
+
+## Benchmark de paleta de colores
+
+Imagen generada: [`paleta/benchmark-colores.png`](../paleta/benchmark-colores.png).
+
+```
+UI design style guide board for "FlowGuard", a fintech payment-approval
+monitoring platform. Dark navy theme (#0F1B2D background), clean modern
+SaaS aesthetic, flat design with subtle depth via soft shadows and
+rounded corners (8-12px radius).
+
+Layout: a single wide reference sheet divided into labeled sections,
+like a design system page:
+
+SECTION 1 — "Brand" — large shield-with-checkmark logo mark in
+electric blue (#2F6FED), white wordmark "FlowGuard", tagline
+"DETECT · VERIFY · PROTECT" in small tracked-out uppercase letters.
+
+SECTION 2 — "Surface colors" — 4 horizontal swatches with hex codes
+printed below each: deep navy background #0F1B2D, elevated card surface
+#16233A, border/divider #223449, and white/off-white text #F4F6F9.
+
+SECTION 3 — "Accent" — one large swatch, vivid blue #2F6FED, labeled
+"Primary action".
+
+SECTION 4 — "Decision status" — three pill-shaped badges side by side,
+each with an icon + label + hex code: green pill with checkmark icon
+"ALLOW #22C55E", red pill with X icon "BLOCK #EF4444", amber pill with
+triangle-exclamation icon "INDETERMINATE #F59E0B".
+
+SECTION 5 — "Typography" — a type scale sample showing a bold sans-serif
+heading, medium-weight subheading, and regular body text, all in white
+on navy, labeled with point sizes (32/20/14).
+
+Clean grid alignment, generous white space between sections, small
+gray section labels in uppercase letterspaced caps, professional
+design-system documentation look, high resolution, flat vector
+illustration style, no photorealism.
+```
 
 ---
 

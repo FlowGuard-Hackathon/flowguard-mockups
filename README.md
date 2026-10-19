@@ -8,11 +8,14 @@ Referencias visuales de FlowGuard: así es como se va a ver la app. Sirve para q
 
 | Carpeta | Contenido |
 |---|---|
-| [`pantallas/`](pantallas/) | Las imágenes generadas (mockups PNG) |
-| [`logo/`](logo/) | Referencias e imágenes del logo |
-| [`prompts/prompts-imagenes.md`](prompts/prompts-imagenes.md) | Los prompts de generación de imagen de cada pantalla y del logo, para regenerarlas o generar las que faltan |
+| [`pantallas/`](pantallas/) | Las 9 pantallas del producto, ya generadas (mockups PNG) |
+| [`logo/`](logo/) | El logo final (`logo.png`, fondo transparente) y la referencia que lo inspiró |
+| [`paleta/`](paleta/) | El benchmark de la paleta de colores (`benchmark-colores.png`) |
+| [`prompts/prompts-imagenes.md`](prompts/prompts-imagenes.md) | Todos los prompts de generación de imagen, para regenerar o ajustar cualquier pieza |
 
 ## Las 9 pantallas del producto
+
+**Ya generadas**, en [`pantallas/`](pantallas/):
 
 1. Login
 2. Dashboard (Panel de supervisión)
@@ -24,7 +27,7 @@ Referencias visuales de FlowGuard: así es como se va a ver la app. Sirve para q
 8. Gestión de usuarios
 9. Configuración — con 3 pestañas: Reglas de pago, Parámetros, Categorías
 
-Estado de cada una (qué ya tiene imagen y qué solo tiene prompt pendiente) en la tabla de [`prompts/prompts-imagenes.md`](prompts/prompts-imagenes.md#estado).
+⚠️ La imagen de **Configuración → Parámetros** quedó generada con una versión anterior del prompt (todavía muestra la pestaña "Integraciones" y una fila de base de datos que se descartaron) — pendiente de regenerar. Detalle en [`prompts/prompts-imagenes.md`](prompts/prompts-imagenes.md#estado).
 
 ## Estilo visual (resumen)
 
